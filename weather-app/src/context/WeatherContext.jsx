@@ -3,11 +3,11 @@ import axios from "axios";
 
 const WeatherContext = createContext();
 
-const API_KEY = "YOUR_OPENWEATHER_API_KEY";
+const API_KEY = "c5d32a94b78a03eabcbd941935a3a768";
 const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
 export const WeatherProvider = ({ children }) => {
-  const [location, setLocation] = useState("New York");
+  const [location, setLocation] = useState("Sangli");
   const [weather, setWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
   const [loading, setLoading] = useState(true);
